@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LinguaGestual.net</title>
+    <link rel="stylesheet" type="text/css" href="tema.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .principal {
+            max-width: 100%;
+        }
+
+        .cabecalho {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #logotipo {
+            max-width: 100%;
+        }
+
+        #menu {
+            text-align: center;
+        }
+
+        .menu_principal {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .mi {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .mi a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .conteudo_entrada {
+            padding: 10px;
+        }
+
+        .tipos_aulas {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tipos_aulas li {
+            margin-bottom: 20px;
+        }
+
+        .tipos_aulas iframe {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .menu_toggle {
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+        }
+
+        .menu_principal.active {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .conteudo_entrada {
+                padding: 10px;
+            }
+
+            .mi {
+                margin: 5px;
+            }
+
+            .menu_toggle {
+                display: block;
+            }
+
+            .menu_principal:not(.active) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="principal">
+        <div class="cabecalho">
+            <div id="logotipo">
+                <img src="logo.png" alt="Logo LinguaGestual.net" style="max-width: 100%;">
+            </div>
+            <div id="menu" class="menu_principal">
+                <div class="menu_toggle" onclick="toggleMenu()">&#9776; Menu</div>
+                <ul class="menu_principal">
+                    <li class="mi"><a class="link_menu" href="index.html">Home</a></li>
+                    <li class="mi"><a class="link_menu" href="about_us.html">About Us</a></li>
+                    <li class="mi"><a class="link_menu" href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo_entrada">
+            <div id="conteudo_centro">
+                <p>Exemplos de aulas:</p>
+                <p>Veja aqui.</p>
+                <ul class="tipos_aulas">
+                    <li>
+                        <iframe src="https://www.youtube.com/embed/ttXLe4S9OYc?si=1A8ie_bRC96xJkIS&amp;start=19"
+                            title="Cores - Língua Gestual Portuguesa" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <iframe src="https://www.youtube.com/embed/OVqH10VsIgg?si=cKpyyoJDhdOd6ICL&amp;start=57"
+                            title="Abecedario Língua Gestual Portuguesa" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <iframe src="https://www.youtube.com/embed/ZeKOiOpKB6U?si=BzcIeXeq6tZ-W2Mj&amp;start=14"
+                            title="Números em LGP" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <iframe src="https://www.youtube.com/embed/A1JIZeoXKA8?si=c4-l6j0YhbeCZmww&amp;start=31"
+                            title="Objetos do dia-a-dia - Língua Gestual Portuguesa" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menuPrincipal = document.querySelector('.menu_principal');
+            menuPrincipal.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

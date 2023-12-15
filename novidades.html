@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LinguaGestual.net</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="tema.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .principal {
+            max-width: 100%;
+        }
+
+        .cabecalho {
+            background-color: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #logotipo {
+            margin-bottom: 10px;
+        }
+
+        #logotipo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu_principal {
+            list-style: none;
+            padding: 0;
+        }
+
+        .mi {
+            margin: 10px;
+        }
+
+        .link_menu {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .conteudo_entrada {
+            padding: 20px;
+        }
+
+        .titulo_conteudo {
+            font-weight: bold;
+        }
+
+        .noticia {
+            clear: both;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        .noticia img {
+            max-width: 100%;
+            height: auto;
+            float: left;
+            width: 30%;
+            margin-right: 20px;
+        }
+
+        .noticia_texto {
+            width: 70%;
+            float: left;
+        }
+
+        .link_texto {
+            color: #0077b6;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .conteudo_entrada {
+                padding: 10px;
+            }
+
+            .noticia img {
+                width: 100%;
+                margin-right: 0;
+            }
+
+            .noticia_texto {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="principal">
+        <div class="cabecalho">
+            <div id="logotipo">
+                <img src="logo.png" alt="Logo LinguaGestual.net" />
+            </div>
+            <div id="menu">
+                <ul class="menu_principal">
+                    <li class="mi"><a class="link_menu" href="index.html">Home</a></li>
+                    <li class="mi"><a class="link_menu" href="about_us.html">About Us</a></li>
+                    <li class="mi"><a class="link_menu" href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo_entrada">
+            <div class="noticia">
+                <span class="titulo_conteudo">Modelo</span><br />Telefone Público para Surdos TPS 01
+                <img src="tf.png" alt="Telefone Público para Surdos TPS 01" />
+                <div class="noticia_texto">
+                    <span class="titulo_conteudo">Finalidade:</span><br />
+                    Visando garantir a acessibilidade das pessoas surdas ou com dificuldade de fala
+                    (paralisia cerebral e acidente vascular cerebral/AVC) aos meios de telefonia, de
+                    forma independente. Próprio para se comunicar por meio de mensagens escritas, o
+                    TPS 01 é ligado na linha telefônica através da conexão dos seus acopladores acústicos a outro telefone comum ao público, sendo uma nova tecnologia que facilita
+                    muito a comunicação dos surdos e deficientes auditivos, que há pouco tempo não
+                    tinham nenhum meio de comunicação por telefone.
+                    
+                </div>
+            </div>
+            <div class="noticia">
+                <img src="1feira.png" alt="I Feira Informativa" />
+                <div class="noticia_texto">
+                    <span class="titulo_conteudo">I FEIRA INFORMATIVA: MUNDO DOS SURDOS E LÍNGUA DOS SINAIS NO PORTO</span>
+                    <br />
+                    Diamantina-MG sediará nos dias 02, 03 e 04 de setembro de 2013, no espaço
+                    cultura JK/UFVJM e no “Mercado Velho”, a I Feira Informativa: Mundo dos Surdos
+                    e Língua de Sinais.
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

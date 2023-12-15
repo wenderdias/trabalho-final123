@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+    <link rel="stylesheet" type="text/css" href="tema.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .principal {
+            padding: 20px;
+        }
+
+        .cabecalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #logotipo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .menu_principal {
+            list-style-type: none;
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .menu_principal li {
+            margin: 0 10px;
+        }
+
+        .conteudo_entrada,
+        .conteudo_principal {
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        #conteudo_centro img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .menu_conteudo {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu_conteudo li {
+            margin-bottom: 20px;
+        }
+
+        .titulo {
+            font-size: 24px;
+            text-align: justify;
+            cursor: pointer;
+            color: blue;
+        }
+
+        .texto {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        .link_texto {
+            text-decoration: none;
+            color: blue;
+            background-color: white;
+        }
+
+        .rodape {
+            margin-top: 20px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .cabecalho {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu_principal {
+                margin-top: 10px;
+            }
+
+            .menu_principal li {
+                margin: 0 5px;
+            }
+
+            .conteudo_entrada,
+            .conteudo_principal {
+                padding: 5px;
+            }
+
+            .titulo {
+                font-size: 20px;
+            }
+
+            .texto {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="principal">
+        <div class="cabecalho">
+            <div id="logotipo">
+                <img src="logo.png" alt="Logo da Minha Página" />
+            </div>
+            <div id="menu">
+                <ul class="menu_principal">
+                    <li class="mi"><a class="link_menu" href="index.html">Home</a></li>
+                    <li class="mi"><a class="link_menu" href="about_us.html">About Us</a></li>
+                    <li class="mi"><a class="link_menu" href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo_entrada">
+            <div id="conteudo_centro">
+                <img src="image_1.png" alt="Image 1" />
+            </div>
+        </div>
+        <div class="conteudo_principal">
+            <ul class="menu_conteudo">
+                <li class="ip">
+                    <div class="titulo">Aulas Online</div>
+                    <div class="texto">Nesta formação, toda a informação é apresentada de forma progressiva e clara, através de aulas em vídeo, com exemplos reais e esclarecedores <br /><a class="link_texto" href="aulas.html">Leia mais...</a></div>
+                </li>
+                <li class="ip">
+                    <div class="titulo">Comunidades</div>
+                    <div class="texto">Representação e Defesa da População Surda<br />Ensino e formação profissional<br />Apoio social à comunidade surda<br /><a class="link_texto" href="comunidades.html">Leia mais...</a></div>
+                </li>
+                <li class="ip">
+                    <div class="titulo">Novidades</div>
+                    <div class="texto">Tecnologias<br />Filmes<br />Feira Informativa<br /><a class="link_texto" href="novidades.html">Leia mais...</a></div>
+                </li>
+            </ul>
+        </div>
+        <div class="rodape"></div>
+    </div>
+
+    <script>
+        document.querySelector('.titulo').addEventListener('click', function () {
+            alert('Você clicou em um título!');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+body {
+	font-family:"Times New Roman", Times, serif;
+	margin: 0px;
+	padding: 0px;
+	background: #fff;	
+}
+
+span {
+	color: #fdae3e;
+	font-weight:bold;
+}
+
+.principal {
+	width: 760px;
+	margin: 0 auto;
+}
+
+.cabecalho {
+	height: auto;
+	width: 100%;
+	float: left;
+	position:relative;	
+}
+
+.conteudo_entrada {
+	height: auto;
+	width: 100%;
+	float: left;
+	margin: 2px;
+}
+
+.conteudo_principal {
+	height: auto;
+	width: 	100%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.rodape {
+	background-color: #d3cc06;
+	height: 35px;
+	width: 100%;
+	float: left;	
+}
+
+#logotipo {
+	height: 130px;
+	width: 250px;
+	float: left;
+}
+
+#menu {
+	width: 450px;
+	height: 70px;
+	float: right;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.menu_principal {
+	list-style-type: none; /* coloca a lista sem tópicos */	
+	float: right;
+}
+
+.mi {	
+	display: block; /* coloca a lista como menu */
+	float: left; /* coloca os itens lado a lado */
+	margin-left: 10px; /* 10 píxeis de margem do lado esquerdo */
+	margin-right: 10px; /* 10 píxeis de margem do lado direito */
+	width: 76px; /* 100 píxeis de largura */
+	text-align: center; /* centra o texto */
+	border-top-style: solid; /* adiciona um limite em cima na caixa */
+	border-top-width: 6px; /* medida de 6 píxeis do limite */
+	border-top-color: #d3cc06; /* cor do limite */
+	height: 41px;
+
+	
+}
+
+.mi:hover {
+	border-top-color: #bbb505; /* quando o rato estiver por cima do item do menu, a cor muda para um tom mais escuro */
+}
+
+.mi:active {
+	border-top-color: #f9ad36; /* quando a página seleccionada estiver a ser mostrada, a cor do limite muda para laranja */	
+}
+
+#barra_esquerda, #barra_direita {
+	 /* coloca a barra à esquerda dentro da div principal */
+	width: 42px; /* largura */
+	height: 262px; /* altura */
+	background-color:#d3cc06;
+}
+#barra_esquerda {
+	float: left;	
+}
+#barra_direita {
+	float: right;
+}
+
+#conteudo_centro {
+	float: left;
+	margin-left: 20px;
+}
+
+.menu_conteudo {
+		list-style-type: none; /* coloca a lista sem tópicos */	
+}
+
+.ip {
+	display: block; /* coloca a lista como menu */
+	float: left; /* coloca os itens lado a lado */
+	width: 30%;
+	margin: 2px;
+}
+
+.titulo {
+	text-transform: uppercase;	/* Letras em maiúsculas*/
+	border-bottom-style: solid; /* adiciona um limite em cima na caixa */
+	border-bottom-width: 6px; /* medida de 6 píxeis do limite */
+	border-bottom-color: #d3cc06; /* cor do limite */
+	margin-bottom: 5px; /* margem em baixo do título*/
+	text-align: center;
+}
+
+.link_texto {
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+}
+
+.link_menu {
+	text-decoration: none;
+	color: #000;
+	font-weight:bold;	
+}
+
+.noticia {
+	margin-bottom: 20px;
+	float: left;
+	width: 100%;
+	height: auto;
+}

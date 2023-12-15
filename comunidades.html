@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaGestual</title>
+    <link rel="stylesheet" type="text/css" href="tema.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .principal {
+            max-width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .cabecalho {
+            background-color: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #logotipo {
+            margin-bottom: 10px;
+        }
+
+        #logotipo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu_principal {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .mi {
+            margin: 10px;
+        }
+
+        .link_menu {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .conteudo_entrada {
+            padding: 20px;
+        }
+
+        .conteudo_entrada p {
+            margin-bottom: 10px;
+        }
+
+        .titulo_conteudo {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .conteudo_entrada {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="principal">
+        <div class="cabecalho">
+            <div id="logotipo">
+                <img src="logo.png" alt="Logo LinguaGestual" />
+            </div>
+            <nav id="menu">
+                <ul class="menu_principal">
+                    <li class="mi"><a class="link_menu" href="index.html">Home</a></li>
+                    <li class="mi"><a class="link_menu" href="about_us.html">About Us</a></li>
+                    <li class="mi"><a class="link_menu" href="contact_us.html" id="contatoBtn">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="conteudo_entrada">
+            <div id="conteudo_centro">
+                <p><span>Denominação:</span> ASSOCIAÇÃO DE SURDOS DO PORTO</p>
+                <p><span>Natureza Jurídica:</span> Instituição Privada de Solidariedade Social sem fins lucrativos</p>
+                <p><span>Contactos:</span></p>
+                <address>
+                    <p>Centro de Atendimento e Encaminhamento</p>
+                    <p>Rua Dr. José Marques, 113-C.</p>
+                    <p>4300-271 Porto</p>
+                    <p>Telefone: 225102390 - Fax: 225103642</p>
+                    <p>Email: asurdosporto@asurdosporto.org.pt</p>
+                    <p>Telefone de Texto (TTD): 225103643</p>
+                </address>
+                <address>
+                    <p><span>Centro de Integração Profissional para Surdos</span></p>
+                    <p>Rua Dr. José Marques, 99-C</p>
+                    <p>4300-271 Porto</p>
+                    <p>Telefone: 225189973 - Fax: 225103642</p>
+                    <p>Email: cips@asurdosporto.org.pt</p>
+                    
+                </address>
+                <p><span>Atividades Principais:</span></p>
+                <ul>
+                    <li>Representação e Defesa da População Surda</li>
+                    <li>Ensino e Formação Profissional</li>
+                    <li>Apoio Social à Comunidade Surda</li>
+                </ul>
+                <p><span>Âmbito do Atendimento:</span></p>
+                <ul>
+                    <li>Comunidade Surda</li>
+                    <li>Famílias de Pessoas Surdas</li>
+                    <li>Comunidade em Geral</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
